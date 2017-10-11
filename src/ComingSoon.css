@@ -3,6 +3,7 @@
   background-blend-mode: overlay;
   background-size: cover;
   color: white;
+  position: relative;
 }
 
 .coming-soon > .container {
@@ -20,10 +21,22 @@
 
 .card h1 {
   text-align: center;
+  margin: 0;
 }
 
 svg {
   border-color: white;
+  position: absolute;
+  top: -10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.space-icon {
+  max-height: 50px;
+  width: auto;
+  fill: white;
+  position: fixed;
 }
 
 .app-logo {

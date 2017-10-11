@@ -1,0 +1,139 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:19
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-alien-with-aqualung:before { content: "\f100"; }
+.flaticon-astronaut-and-flag:before { content: "\f101"; }
+.flaticon-astronaut-ingravity:before { content: "\f102"; }
+.flaticon-astronaut-user:before { content: "\f103"; }
+.flaticon-big-moon:before { content: "\f104"; }
+.flaticon-big-satellite:before { content: "\f105"; }
+.flaticon-big-sun-shining:before { content: "\f106"; }
+.flaticon-big-telescope:before { content: "\f107"; }
+.flaticon-big-ufo:before { content: "\f108"; }
+.flaticon-black-hole:before { content: "\f109"; }
+.flaticon-capsule-parachute:before { content: "\f10a"; }
+.flaticon-death-star:before { content: "\f10b"; }
+.flaticon-earth-and-moon:before { content: "\f10c"; }
+.flaticon-extraterrestial-head:before { content: "\f10d"; }
+.flaticon-foortprints-on-the-moon:before { content: "\f10e"; }
+.flaticon-galaxy-view:before { content: "\f10f"; }
+.flaticon-gun-blaster:before { content: "\f110"; }
+.flaticon-inclined-satellite:before { content: "\f111"; }
+.flaticon-international-space-station:before { content: "\f112"; }
+.flaticon-jupiter-with-satellite:before { content: "\f113"; }
+.flaticon-laser-gun:before { content: "\f114"; }
+.flaticon-launching-shuttle:before { content: "\f115"; }
+.flaticon-little-extraterrestial:before { content: "\f116"; }
+.flaticon-mars-rover:before { content: "\f117"; }
+.flaticon-mars-with-satellite:before { content: "\f118"; }
+.flaticon-meteorite-falling:before { content: "\f119"; }
+.flaticon-moonwalker:before { content: "\f11a"; }
+.flaticon-neptune-with-satellite:before { content: "\f11b"; }
+.flaticon-radar-pointing-up:before { content: "\f11c"; }
+.flaticon-radar-system:before { content: "\f11d"; }
+.flaticon-rocket-flying:before { content: "\f11e"; }
+.flaticon-rocket-start:before { content: "\f11f"; }
+.flaticon-saturn:before { content: "\f120"; }
+.flaticon-shooting-star:before { content: "\f121"; }
+.flaticon-solar-system:before { content: "\f122"; }
+.flaticon-space-capsule:before { content: "\f123"; }
+.flaticon-space-lander:before { content: "\f124"; }
+.flaticon-space-lander-1:before { content: "\f125"; }
+.flaticon-space-module:before { content: "\f126"; }
+.flaticon-space-rocket:before { content: "\f127"; }
+.flaticon-space-shuttle:before { content: "\f128"; }
+.flaticon-spaceport:before { content: "\f129"; }
+.flaticon-sputnik:before { content: "\f12a"; }
+.flaticon-sputnik-1:before { content: "\f12b"; }
+.flaticon-telescope-pointing-up:before { content: "\f12c"; }
+.flaticon-ufo:before { content: "\f12d"; }
+.flaticon-ufo-and-cow:before { content: "\f12e"; }
+.flaticon-ufo-flying:before { content: "\f12f"; }
+.flaticon-uranus-with-satellite:before { content: "\f130"; }
+.flaticon-venus-with-satellite:before { content: "\f131"; }
+    
+    $font-Flaticon-alien-with-aqualung: "\f100";
+    $font-Flaticon-astronaut-and-flag: "\f101";
+    $font-Flaticon-astronaut-ingravity: "\f102";
+    $font-Flaticon-astronaut-user: "\f103";
+    $font-Flaticon-big-moon: "\f104";
+    $font-Flaticon-big-satellite: "\f105";
+    $font-Flaticon-big-sun-shining: "\f106";
+    $font-Flaticon-big-telescope: "\f107";
+    $font-Flaticon-big-ufo: "\f108";
+    $font-Flaticon-black-hole: "\f109";
+    $font-Flaticon-capsule-parachute: "\f10a";
+    $font-Flaticon-death-star: "\f10b";
+    $font-Flaticon-earth-and-moon: "\f10c";
+    $font-Flaticon-extraterrestial-head: "\f10d";
+    $font-Flaticon-foortprints-on-the-moon: "\f10e";
+    $font-Flaticon-galaxy-view: "\f10f";
+    $font-Flaticon-gun-blaster: "\f110";
+    $font-Flaticon-inclined-satellite: "\f111";
+    $font-Flaticon-international-space-station: "\f112";
+    $font-Flaticon-jupiter-with-satellite: "\f113";
+    $font-Flaticon-laser-gun: "\f114";
+    $font-Flaticon-launching-shuttle: "\f115";
+    $font-Flaticon-little-extraterrestial: "\f116";
+    $font-Flaticon-mars-rover: "\f117";
+    $font-Flaticon-mars-with-satellite: "\f118";
+    $font-Flaticon-meteorite-falling: "\f119";
+    $font-Flaticon-moonwalker: "\f11a";
+    $font-Flaticon-neptune-with-satellite: "\f11b";
+    $font-Flaticon-radar-pointing-up: "\f11c";
+    $font-Flaticon-radar-system: "\f11d";
+    $font-Flaticon-rocket-flying: "\f11e";
+    $font-Flaticon-rocket-start: "\f11f";
+    $font-Flaticon-saturn: "\f120";
+    $font-Flaticon-shooting-star: "\f121";
+    $font-Flaticon-solar-system: "\f122";
+    $font-Flaticon-space-capsule: "\f123";
+    $font-Flaticon-space-lander: "\f124";
+    $font-Flaticon-space-lander-1: "\f125";
+    $font-Flaticon-space-module: "\f126";
+    $font-Flaticon-space-rocket: "\f127";
+    $font-Flaticon-space-shuttle: "\f128";
+    $font-Flaticon-spaceport: "\f129";
+    $font-Flaticon-sputnik: "\f12a";
+    $font-Flaticon-sputnik-1: "\f12b";
+    $font-Flaticon-telescope-pointing-up: "\f12c";
+    $font-Flaticon-ufo: "\f12d";
+    $font-Flaticon-ufo-and-cow: "\f12e";
+    $font-Flaticon-ufo-flying: "\f12f";
+    $font-Flaticon-uranus-with-satellite: "\f130";
+    $font-Flaticon-venus-with-satellite: "\f131";

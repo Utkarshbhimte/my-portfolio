@@ -3,6 +3,7 @@ import ReactSVG from "react-svg";
 import logo from "./logo.svg";
 import sampleSize from "lodash/sampleSize";
 import sample from "lodash/sample";
+import shuffle from "lodash/shuffle";
 import random from "lodash/random";
 import "./ComingSoon.css";
 
@@ -28,9 +29,17 @@ let icons = [
 ];
 
 const zIndexs = [
-  { class: "front", size: 50 },
-  { class: "back", size: 24 },
-  { class: "middle", size: 37 }
+  { class: "front", size: 200, motion: 0.6 },
+  { class: "front", size: 85, motion: 0.8 },
+  { class: "front", size: 50, motion: 0.5 },
+  { class: "back", size: 24, motion: 0.7 },
+  { class: "back", size: 32, motion: 0.5 },
+  { class: "back", size: 15, motion: 0.8 },
+  { class: "back", size: 29, motion: 0.6 },
+  { class: "middle", size: 48, motion: 1.2 },
+  { class: "middle", size: 48, motion: 1.3 },
+  { class: "middle", size: 37, motion: 0.9 },
+  { class: "middle", size: 48, motion: 1.15 }
 ];
 
 class App extends Component {
@@ -90,7 +99,7 @@ class App extends Component {
     const xAxis = Math.random() * half_width;
     const yAxis = Math.random() * half_height + 50;
 
-    console.log("quad", quad, x_state, y_state);
+    // console.log("quad", quad, x_state, y_state);
 
     return {
       xAxis,
@@ -104,7 +113,7 @@ class App extends Component {
     const heading = document.querySelector(".heading");
     const heading_height = heading.clientHeight;
     const heading_offset = heading.offsetTop;
-    console.log({ heading_height, heading_offset });
+    // console.log({ heading_height, heading_offset });
   };
 
   //TODO: have a fcntion to make sure it is not coinciding with the heading. . .
@@ -112,16 +121,22 @@ class App extends Component {
     return { xAxis, yAxis };
   };
 
-  renderImage = ({ xAxis, yAxis, target, i, hor, vert }) => {
-    console.log({ xAxis, yAxis, target, i, hor, vert });
+  renderImage = ({ xAxis, yAxis, target, i, hor, vert, zIndex }) => {
+    const transform = `translateX(${this.state.sensor.gamma *
+      2}px) translateY(${this.state.sensor.beta * zIndex.motion}px)`;
+
+    // console.log({ ...zIndex });
+
     return (
       <img
         key={i}
         style={{
           [hor]: xAxis,
           [vert]: yAxis,
+          height: zIndex.size + "px",
+          transform
         }}
-        className="space-icon"
+        className={`space-icon ${zIndex.class}`}
         src={target}
         alt=""
       />
@@ -133,12 +148,13 @@ class App extends Component {
     icons = await Promise.all([
       ...icons.map(async (icon, i) => ({
         ...this._getRandomCoords(i),
+        zIndex: sample(zIndexs),
         i,
         target: await require(`./images/space-icons/${icon}`)
       }))
     ]);
 
-    console.log({ icons });
+    // console.log({ icons });
     this.setState({ icons });
   };
 
@@ -149,12 +165,12 @@ class App extends Component {
           <div className="container">
             {/* <img src={logo} className="app-logo" alt="logo" /> */}
             <div className="card">
-              <h1 className="heading">Loading. . .</h1>
-              <span>
+              <h1 className="heading">Coming Soon. . .</h1>
+              {/* <span>
                 abs: {this.state.sensor.absolute}, <br /> alpha:{" "}
                 {this.state.sensor.alpha},<br /> beta: {this.state.sensor.beta},<br />{" "}
                 gamma: {this.state.sensor.gamma}{" "}
-              </span>
+              </span> */}
             </div>
 
             {this.state.icons.length > 0 &&

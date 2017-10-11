@@ -21,7 +21,12 @@
 .card h1 {
   text-align: center;
 }
-. .app-logo {
+
+svg {
+  border-color: white;
+}
+
+.app-logo {
   max-width: 150px;
   display: block;
   margin: 2rem auto;

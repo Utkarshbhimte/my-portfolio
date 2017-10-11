@@ -33,12 +33,20 @@ svg {
 }
 
 .space-icon {
-  max-height: 50px;
   width: auto;
   fill: white;
   position: fixed;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s linear;
+  will-change: transform;
 }
+
+/* .space-icon.middle {
+  transition: all 0.1s ease-in-out;
+}
+
+.space-icon.back {
+  transition: all .1s ease-in-out;
+} */
 
 .app-logo {
   max-width: 150px;

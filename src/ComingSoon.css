@@ -37,6 +37,7 @@ svg {
   width: auto;
   fill: white;
   position: fixed;
+  transition: all 0.2s ease-in;
 }
 
 .app-logo {
